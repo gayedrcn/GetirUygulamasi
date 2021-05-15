@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/anasayfaFragment"
+        android:icon="@drawable/anasayfa_resim" />
+    <item
+        android:id="@+id/araFragment"
+        android:icon="@drawable/ara_resim" />
+    <item
+        android:id="@+id/profilFragment"
+        android:icon="@drawable/profil_resim" />
+    <item
+        android:id="@+id/kampanyaFragment"
+        android:icon="@drawable/kampanya_resim" />
+</menu>

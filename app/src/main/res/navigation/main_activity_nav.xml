@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.gayedirican.getiruygulamasi.AnasayfaFragment"
+        android:label="AnasayfaFragment"
+        tools:layout="@layout/fragment_anasayfa">
+        <action
+            android:id="@+id/detayGecis"
+            app:destination="@id/kategoriDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kategoriDetayFragment"
+        android:name="com.gayedirican.getiruygulamasi.KategoriDetayFragment"
+        android:label="KategoriDetayFragment"
+        tools:layout="@layout/fragment_kategori_detay">
+        <argument
+            android:name="nesne"
+            app:argType="com.gayedirican.getiruygulamasi.Kategoriler" />
+    </fragment>
+    <fragment
+        android:id="@+id/araFragment"
+        android:name="com.gayedirican.getiruygulamasi.AraFragment"
+        android:label="AraFragment"
+        tools:layout="@layout/fragment_ara"/>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.gayedirican.getiruygulamasi.ProfilFragment"
+        android:label="ProfilFragment"
+        tools:layout="@layout/fragment_profil"/>
+    <fragment
+        android:id="@+id/kampanyaFragment"
+        android:name="com.gayedirican.getiruygulamasi.KampanyaFragment"
+        android:label="KampanyaFragment"
+        tools:layout="@layout/fragment_kampanya"/>
+</navigation>
